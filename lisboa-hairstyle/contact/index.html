@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lisboa Hairstyle</title>
+    <meta name="description" content="Get in touch with Lisboa Hairstyle. Book an appointment, ask a question, or find our location in Lisbon.">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="icon" href="../assets/favicon.ico"> <!-- Placeholder favicon -->
+</head>
+<body class="bg-brand-black text-brand-white font-sans">
+
+    <!-- Header -->
+    <header class="bg-brand-black text-brand-white border-b-2 border-brand-gold sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo/Site Title -->
+            <div class="mb-4 md:mb-0">
+                <a href="/" aria-label="Navigate to Home page">
+                    <h1 class="text-3xl font-serif text-brand-text-gold hover:text-brand-gold transition-colors">Lisboa Hairstyle</h1>
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav aria-label="Main navigation">
+                <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 items-center">
+                    <li>
+                        <a href="/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors pb-1 border-b-2 border-transparent hover:border-brand-text-gold" aria-label="Navigate to Home page">Home</a>
+                    </li>
+                    <li>
+                        <a href="/services/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors pb-1 border-b-2 border-transparent hover:border-brand-text-gold" aria-label="Navigate to Services page">Services</a>
+                    </li>
+                    <li>
+                        <a href="/reviews/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors pb-1 border-b-2 border-transparent hover:border-brand-text-gold" aria-label="Navigate to Reviews page">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="/contact/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors pb-1 border-b-2 border-brand-text-gold" aria-label="Navigate to Contact page">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl md:text-5xl font-serif text-brand-text-gold my-8 text-center">Get In Touch</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <!-- Contact Form Section -->
+            <section id="contact-form-section" class="bg-neutral-900 p-6 sm:p-8 rounded-lg border border-brand-gold shadow-lg">
+                <h2 class="text-3xl font-serif text-brand-text-gold mb-6">Send Us a Message</h2>
+                <form id="contactForm" novalidate>
+                    <div class="mb-5">
+                        <label for="name" class="block mb-2 text-sm font-medium text-brand-white">Your Name</label>
+                        <input type="text" id="name" name="name" required 
+                               class="bg-neutral-800 border border-neutral-700 text-brand-white text-sm rounded-lg focus:ring-brand-gold focus:border-brand-gold block w-full p-2.5 placeholder-gray-400" 
+                               placeholder="John Doe">
+                        <p id="nameError" class="text-red-500 text-xs mt-1 hidden"></p>
+                    </div>
+                    <div class="mb-5">
+                        <label for="email" class="block mb-2 text-sm font-medium text-brand-white">Your Email</label>
+                        <input type="email" id="email" name="email" required
+                               class="bg-neutral-800 border border-neutral-700 text-brand-white text-sm rounded-lg focus:ring-brand-gold focus:border-brand-gold block w-full p-2.5 placeholder-gray-400"
+                               placeholder="name@example.com">
+                        <p id="emailError" class="text-red-500 text-xs mt-1 hidden"></p>
+                    </div>
+                    <div class="mb-5">
+                        <label for="message" class="block mb-2 text-sm font-medium text-brand-white">Your Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                                  class="bg-neutral-800 border border-neutral-700 text-brand-white text-sm rounded-lg focus:ring-brand-gold focus:border-brand-gold block w-full p-2.5 placeholder-gray-400"
+                                  placeholder="Let us know how we can help..."></textarea>
+                        <p id="messageError" class="text-red-500 text-xs mt-1 hidden"></p>
+                    </div>
+                    <button type="submit" 
+                            class="font-sans bg-brand-gold text-brand-black hover:bg-yellow-400 active:bg-yellow-600 font-bold py-3 px-6 rounded-lg text-md uppercase tracking-wider transition-all duration-300 ease-in-out shadow-md hover:shadow-gold-glow">
+                        Send Message
+                    </button>
+                    <div id="formMessages" class="mt-4 text-sm"></div>
+                </form>
+            </section>
+
+            <!-- Business Information & Map Section -->
+            <section id="business-info" class="bg-neutral-900 p-6 sm:p-8 rounded-lg border border-brand-gold shadow-lg" itemscope itemtype="http://schema.org/LocalBusiness">
+                <meta itemprop="name" content="Lisboa Hairstyle">
+                <meta itemprop="image" content="../assets/logo-placeholder.png"> <!-- Add a logo placeholder -->
+                <meta itemprop="priceRange" content="€€"> <!-- Example price range -->
+                
+                <h2 class="text-3xl font-serif text-brand-text-gold mb-6">Our Details</h2>
+                
+                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="mb-4">
+                    <h3 class="text-xl font-serif text-brand-text-gold mb-1">Address</h3>
+                    <p class="font-sans text-brand-white" itemprop="streetAddress">Rua Augusta, 222</p>
+                    <p class="font-sans text-brand-white"><span itemprop="postalCode">1100-052</span> <span itemprop="addressLocality">Lisboa</span>, <span itemprop="addressCountry">Portugal</span></p>
+                    <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates" class="hidden">
+                        <meta itemprop="latitude" content="38.7321924" />
+                        <meta itemprop="longitude" content="-9.1289864" />
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="text-xl font-serif text-brand-text-gold mb-1">Contact</h3>
+                    <p class="font-sans text-brand-white">
+                        Phone: <a href="tel:+351912345678" class="hover:text-brand-text-gold transition-colors" itemprop="telephone">+351 912 345 678</a>
+                    </p>
+                    <p class="font-sans text-brand-white">
+                        Email: <a href="mailto:contact@lisboahairstyle.com" class="hover:text-brand-text-gold transition-colors" itemprop="email">contact@lisboahairstyle.com</a>
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-serif text-brand-text-gold mb-2">Opening Hours</h3>
+                    <meta itemprop="openingHours" content="Mo-Fr 09:00-19:00"/> <!-- Placeholder -->
+                    <meta itemprop="openingHours" content="Sa 09:00-14:00"/> <!-- Placeholder -->
+                    <p class="font-sans text-brand-white">Monday - Friday: 9:00 AM - 7:00 PM</p>
+                    <p class="font-sans text-brand-white">Saturday: 9:00 AM - 2:00 PM</p>
+                    <p class="font-sans text-brand-white">Sunday: Closed</p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-serif text-brand-text-gold mb-2">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Lisboa Hairstyle on Facebook">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="#" class="text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Lisboa Hairstyle on Instagram">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zM12 17.25a5.25 5.25 0 100-10.5 5.25 5.25 0 000 10.5z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-2.605 0-2.93.01-3.954.057a6.47 6.47 0 00-4.624 1.603A6.471 6.471 0 001.82 8.434c-.047 1.023-.057 1.349-.057 3.953s.01 2.93.057 3.954a6.47 6.47 0 001.603 4.624 6.471 6.471 0 004.523 1.763c1.023.047 1.349.057 3.953.057s2.93-.01 3.954-.057a6.47 6.47 0 004.624-1.603 6.471 6.471 0 001.763-4.523c.047-1.023.057-1.349.057-3.953s-.01-2.93-.057-3.954A6.47 6.47 0 0019.566 3.96 6.471 6.471 0 0015.043 2.3c-1.023-.047-1.349-.057-3.953-.057zm0-1.5c2.66 0 3.01.012 4.062.06 1.522.071 2.57.348 3.464.71a7.949 7.949 0 013.11 3.11c.363.893.64 1.942.71 3.464.049 1.052.061 1.402.061 4.062s-.012 3.01-.06 4.062c-.071 1.522-.348 2.57-.71 3.464a7.949 7.949 0 01-3.11 3.11c-.893.363-1.942.64-3.464.71-1.052.049-1.402.061-4.062.061s-3.01-.012-4.062-.06c-1.522-.071-2.57-.348-3.464-.71a7.949 7.949 0 01-3.11-3.11c-.363-.893-.64-1.942-.71-3.464-.049-1.052-.06-1.402-.06-4.062s.012-3.01.06-4.062c.071-1.522.348-2.57.71-3.464a7.949 7.949 0 013.11-3.11c.893-.363 1.942.64 3.464.71C8.99.811 9.34.75 12 .75z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div id="map" class="mt-6">
+                    <h3 class="text-xl font-serif text-brand-text-gold mb-2">Find Us Here</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.999029995096!2d-9.1289864!3d38.7321924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933b0dbd7fc89%3A0xae0bbd53527010e7!2sLisboa%20Hair%20Style!5e0!3m2!1sen!2spt!4v1716621000000" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0; border-radius: 8px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Lisboa Hairstyle Location Map">
+                    </iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-black text-brand-white border-t-2 border-brand-gold">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+                <!-- Social Media Links -->
+                <div class="mb-6 md:mb-0">
+                    <h5 class="font-serif text-brand-text-gold text-lg mb-2">Follow Us</h5>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Lisboa Hairstyle on Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="#" class="text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Lisboa Hairstyle on Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zM12 17.25a5.25 5.25 0 100-10.5 5.25 5.25 0 000 10.5z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-2.605 0-2.93.01-3.954.057a6.47 6.47 0 00-4.624 1.603A6.471 6.471 0 001.82 8.434c-.047 1.023-.057 1.349-.057 3.953s.01 2.93.057 3.954a6.47 6.47 0 001.603 4.624 6.471 6.471 0 004.523 1.763c1.023.047 1.349.057 3.953.057s2.93-.01 3.954-.057a6.47 6.47 0 004.624-1.603 6.471 6.471 0 001.763-4.523c.047-1.023.057-1.349.057-3.953s-.01-2.93-.057-3.954A6.47 6.47 0 0019.566 3.96 6.471 6.471 0 0015.043 2.3c-1.023-.047-1.349-.057-3.953-.057zm0-1.5c2.66 0 3.01.012 4.062.06 1.522.071 2.57.348 3.464.71a7.949 7.949 0 013.11 3.11c.363.893.64 1.942.71 3.464.049 1.052.061 1.402.061 4.062s-.012 3.01-.06 4.062c-.071 1.522-.348 2.57-.71 3.464a7.949 7.949 0 01-3.11 3.11c-.893.363-1.942.64-3.464.71-1.052.049-1.402.061-4.062.061s-3.01-.012-4.062-.06c-1.522-.071-2.57-.348-3.464-.71a7.949 7.949 0 01-3.11-3.11c-.363-.893-.64-1.942-.71-3.464-.049-1.052-.06-1.402-.06-4.062s.012-3.01.06-4.062c.071-1.522.348-2.57.71-3.464a7.949 7.949 0 013.11-3.11c.893-.363 1.942.64 3.464.71C8.99.811 9.34.75 12 .75z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Legal Links -->
+                <div class="mb-6 md:mb-0">
+                    <h5 class="font-serif text-brand-text-gold text-lg mb-2">Legal</h5>
+                    <ul class="space-y-1">
+                        <li><a href="/terms/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Navigate to Terms of Service page">Terms of Service</a></li>
+                        <li><a href="/privacy/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Navigate to Privacy Policy page">Privacy Policy</a></li>
+                        <li><a href="/cookies/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Navigate to Cookie Policy page">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Copyright -->
+                <div class="md:text-right">
+                    <p class="font-sans text-sm text-gray-400">&copy; <span id="current-year">2024</span> Lisboa Hairstyle. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Ensure this script runs to update the year
+            if (document.getElementById('current-year')) {
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            }
+        </script>
+    </footer>
+
+    <script src="../js/contact-form.js" defer></script>
+    <script src="../js/cookie-consent.js" defer></script>
+</body>
+</html>

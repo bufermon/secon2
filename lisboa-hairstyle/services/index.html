@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Lisboa Hairstyle</title>
+    <meta name="description" content="Explore the range of grooming services at Lisboa Hairstyle, including haircuts, shaves, coloring, and more.">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="icon" href="../assets/favicon.ico"> <!-- Placeholder favicon -->
+</head>
+<body class="bg-brand-black text-brand-white font-sans">
+
+    <!-- Header -->
+    <header class="bg-brand-black text-brand-white border-b-2 border-brand-gold sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo/Site Title -->
+            <div class="mb-4 md:mb-0">
+                <a href="/" aria-label="Navigate to Home page">
+                    <h1 class="text-3xl font-serif text-brand-text-gold hover:text-brand-gold transition-colors">Lisboa Hairstyle</h1>
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav aria-label="Main navigation">
+                <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 items-center">
+                    <li>
+                        <a href="/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors pb-1 border-b-2 border-transparent hover:border-brand-text-gold" aria-label="Navigate to Home page">Home</a>
+                    </li>
+                    <li>
+                        <a href="/services/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors pb-1 border-b-2 border-brand-text-gold" aria-label="Navigate to Services page">Services</a>
+                    </li>
+                    <li>
+                        <a href="/reviews/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors pb-1 border-b-2 border-transparent hover:border-brand-text-gold" aria-label="Navigate to Reviews page">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="/contact/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors pb-1 border-b-2 border-transparent hover:border-brand-text-gold" aria-label="Navigate to Contact page">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-5xl font-serif text-brand-text-gold my-10 text-center">Our Services</h1>
+
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Side Navigation (Sticky) -->
+            <aside class="md:w-1/4 lg:w-1/5 self-start md:sticky md:top-32"> <!-- Adjust top based on header height -->
+                <div class="bg-neutral-900 p-6 rounded-lg border border-brand-gold shadow-lg">
+                    <h2 class="text-2xl font-serif text-brand-text-gold mb-4">Service Menu</h2>
+                    <nav aria-label="Services navigation">
+                        <ul class="space-y-3">
+                            <li><a href="#hair-scalp" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors block pb-1 border-b border-transparent hover:border-brand-text-gold">Hair & Scalp</a></li>
+                            <li><a href="#beard-face" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors block pb-1 border-b border-transparent hover:border-brand-text-gold">Beard & Face</a></li>
+                            <li><a href="#coloring" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors block pb-1 border-b border-transparent hover:border-brand-text-gold">Coloring</a></li>
+                            <li><a href="#extras" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors block pb-1 border-b border-transparent hover:border-brand-text-gold">Extras</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Services Grid -->
+            <div class="md:w-3/4 lg:w-4/5">
+                <!-- Hair & Scalp Section -->
+                <section id="hair-scalp" class="mb-16 scroll-mt-24"> <!-- scroll-mt for offset due to sticky header -->
+                    <h2 class="text-3xl font-serif text-brand-text-gold mb-8 border-b-2 border-brand-gold pb-2">Hair & Scalp Treatments</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                        <article id="classic-haircut" class="service-item bg-brand-black border border-brand-gold rounded-lg p-6 shadow-lg hover:shadow-gold-glow transition-shadow duration-300 flex flex-col">
+                            <img src="../assets/img/placeholder-icon-cut.svg" alt="Classic Haircut service icon" class="w-16 h-16 mb-4 text-brand-gold self-center" onError="this.onerror=null;this.src='../assets/img/service-placeholder.svg';">
+                            <h3 class="text-2xl font-serif text-brand-text-gold mb-2 text-center">Classic Haircut</h3>
+                            <p class="text-gray-300 font-sans mb-3 text-sm flex-grow">A timeless cut, meticulously tailored to your individual style and preferences by our master barbers.</p>
+                            <p class="text-2xl font-bold text-brand-gold mb-4 text-center">€25</p>
+                            <a href="/contact/" class="mt-auto text-center font-sans bg-brand-gold text-brand-black hover:bg-yellow-400 active:bg-yellow-600 font-semibold py-2 px-6 rounded-md transition-all duration-300">Book Now</a>
+                        </article>
+                        <article id="luxury-wash-style" class="service-item bg-brand-black border border-brand-gold rounded-lg p-6 shadow-lg hover:shadow-gold-glow transition-shadow duration-300 flex flex-col">
+                            <img src="../assets/img/service-placeholder.svg" alt="Luxury Wash & Style service icon" class="w-16 h-16 mb-4 text-brand-gold self-center" onError="this.onerror=null;this.src='../assets/img/service-placeholder.svg';">
+                            <h3 class="text-2xl font-serif text-brand-text-gold mb-2 text-center">Luxury Wash & Style</h3>
+                            <p class="text-gray-300 font-sans mb-3 text-sm flex-grow">Indulge in a relaxing hair wash with premium products, followed by a professional styling session.</p>
+                            <p class="text-2xl font-bold text-brand-gold mb-4 text-center">€30</p>
+                            <a href="/contact/" class="mt-auto text-center font-sans bg-brand-gold text-brand-black hover:bg-yellow-400 active:bg-yellow-600 font-semibold py-2 px-6 rounded-md transition-all duration-300">Book Now</a>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Beard & Face Section -->
+                <section id="beard-face" class="mb-16 scroll-mt-24">
+                    <h2 class="text-3xl font-serif text-brand-text-gold mb-8 border-b-2 border-brand-gold pb-2">Beard & Face Care</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                        <article id="beard-trim-shape" class="service-item bg-brand-black border border-brand-gold rounded-lg p-6 shadow-lg hover:shadow-gold-glow transition-shadow duration-300 flex flex-col">
+                            <img src="../assets/img/placeholder-icon-beard.svg" alt="Beard Trim & Shape service icon" class="w-16 h-16 mb-4 text-brand-gold self-center" onError="this.onerror=null;this.src='../assets/img/service-placeholder.svg';">
+                            <h3 class="text-2xl font-serif text-brand-text-gold mb-2 text-center">Beard Trim & Shape</h3>
+                            <p class="text-gray-300 font-sans mb-3 text-sm flex-grow">Expert shaping, trimming, and detailing to achieve your desired beard style, finished with nourishing beard oil.</p>
+                            <p class="text-2xl font-bold text-brand-gold mb-4 text-center">€15</p>
+                            <a href="/contact/" class="mt-auto text-center font-sans bg-brand-gold text-brand-black hover:bg-yellow-400 active:bg-yellow-600 font-semibold py-2 px-6 rounded-md transition-all duration-300">Book Now</a>
+                        </article>
+                        <article id="hot-towel-shave" class="service-item bg-brand-black border border-brand-gold rounded-lg p-6 shadow-lg hover:shadow-gold-glow transition-shadow duration-300 flex flex-col">
+                            <img src="../assets/img/placeholder-icon-shave.svg" alt="Hot Towel Shave service icon" class="w-16 h-16 mb-4 text-brand-gold self-center" onError="this.onerror=null;this.src='../assets/img/service-placeholder.svg';">
+                            <h3 class="text-2xl font-serif text-brand-text-gold mb-2 text-center">Hot Towel Shave</h3>
+                            <p class="text-gray-300 font-sans mb-3 text-sm flex-grow">The ultimate traditional wet shave experience with hot towels, rich lather, and a close, comfortable finish.</p>
+                            <p class="text-2xl font-bold text-brand-gold mb-4 text-center">€20</p>
+                            <a href="/contact/" class="mt-auto text-center font-sans bg-brand-gold text-brand-black hover:bg-yellow-400 active:bg-yellow-600 font-semibold py-2 px-6 rounded-md transition-all duration-300">Book Now</a>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Coloring Section -->
+                <section id="coloring" class="mb-16 scroll-mt-24">
+                    <h2 class="text-3xl font-serif text-brand-text-gold mb-8 border-b-2 border-brand-gold pb-2">Hair Coloring</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                        <article id="hair-coloring" class="service-item bg-brand-black border border-brand-gold rounded-lg p-6 shadow-lg hover:shadow-gold-glow transition-shadow duration-300 flex flex-col">
+                            <img src="../assets/img/service-placeholder.svg" alt="Hair Coloring service icon" class="w-16 h-16 mb-4 text-brand-gold self-center" onError="this.onerror=null;this.src='../assets/img/service-placeholder.svg';">
+                            <h3 class="text-2xl font-serif text-brand-text-gold mb-2 text-center">Permanent Color</h3>
+                            <p class="text-gray-300 font-sans mb-3 text-sm flex-grow">Full coverage or subtle highlights, our expert colorists use premium products for vibrant, lasting results.</p>
+                            <p class="text-2xl font-bold text-brand-gold mb-4 text-center">€40+</p>
+                            <a href="/contact/" class="mt-auto text-center font-sans bg-brand-gold text-brand-black hover:bg-yellow-400 active:bg-yellow-600 font-semibold py-2 px-6 rounded-md transition-all duration-300">Book Now</a>
+                        </article>
+                         <article id="grey-blending" class="service-item bg-brand-black border border-brand-gold rounded-lg p-6 shadow-lg hover:shadow-gold-glow transition-shadow duration-300 flex flex-col">
+                            <img src="../assets/img/service-placeholder.svg" alt="Grey Blending service icon" class="w-16 h-16 mb-4 text-brand-gold self-center" onError="this.onerror=null;this.src='../assets/img/service-placeholder.svg';">
+                            <h3 class="text-2xl font-serif text-brand-text-gold mb-2 text-center">Grey Blending</h3>
+                            <p class="text-gray-300 font-sans mb-3 text-sm flex-grow">Subtly blend away greys for a natural, more youthful look. Quick and effective.</p>
+                            <p class="text-2xl font-bold text-brand-gold mb-4 text-center">€35+</p>
+                            <a href="/contact/" class="mt-auto text-center font-sans bg-brand-gold text-brand-black hover:bg-yellow-400 active:bg-yellow-600 font-semibold py-2 px-6 rounded-md transition-all duration-300">Book Now</a>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Extras Section -->
+                <section id="extras" class="mb-16 scroll-mt-24">
+                    <h2 class="text-3xl font-serif text-brand-text-gold mb-8 border-b-2 border-brand-gold pb-2">Extras</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                        <article id="eyebrow-styling" class="service-item bg-brand-black border border-brand-gold rounded-lg p-6 shadow-lg hover:shadow-gold-glow transition-shadow duration-300 flex flex-col">
+                            <img src="../assets/img/service-placeholder.svg" alt="Eyebrow Styling service icon" class="w-16 h-16 mb-4 text-brand-gold self-center" onError="this.onerror=null;this.src='../assets/img/service-placeholder.svg';">
+                            <h3 class="text-2xl font-serif text-brand-text-gold mb-2 text-center">Eyebrow Styling</h3>
+                            <p class="text-gray-300 font-sans mb-3 text-sm flex-grow">Professional shaping and tidying of eyebrows to perfectly frame your face.</p>
+                            <p class="text-2xl font-bold text-brand-gold mb-4 text-center">€10</p>
+                            <a href="/contact/" class="mt-auto text-center font-sans bg-brand-gold text-brand-black hover:bg-yellow-400 active:bg-yellow-600 font-semibold py-2 px-6 rounded-md transition-all duration-300">Book Now</a>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-black text-brand-white border-t-2 border-brand-gold">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+                <!-- Social Media Links -->
+                <div class="mb-6 md:mb-0">
+                    <h5 class="font-serif text-brand-text-gold text-lg mb-2">Follow Us</h5>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Lisboa Hairstyle on Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="#" class="text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Lisboa Hairstyle on Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zM12 17.25a5.25 5.25 0 100-10.5 5.25 5.25 0 000 10.5z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M12 2.25c-2.605 0-2.93.01-3.954.057a6.47 6.47 0 00-4.624 1.603A6.471 6.471 0 001.82 8.434c-.047 1.023-.057 1.349-.057 3.953s.01 2.93.057 3.954a6.47 6.47 0 001.603 4.624 6.471 6.471 0 004.523 1.763c1.023.047 1.349.057 3.953.057s2.93-.01 3.954-.057a6.47 6.47 0 004.624-1.603 6.471 6.471 0 001.763-4.523c.047-1.023.057-1.349.057-3.953s-.01-2.93-.057-3.954A6.47 6.47 0 0019.566 3.96 6.471 6.471 0 0015.043 2.3c-1.023-.047-1.349-.057-3.953-.057zm0-1.5c2.66 0 3.01.012 4.062.06 1.522.071 2.57.348 3.464.71a7.949 7.949 0 013.11 3.11c.363.893.64 1.942.71 3.464.049 1.052.061 1.402.061 4.062s-.012 3.01-.06 4.062c-.071 1.522-.348 2.57-.71 3.464a7.949 7.949 0 01-3.11 3.11c-.893.363-1.942.64-3.464.71-1.052.049-1.402.061-4.062.061s-3.01-.012-4.062-.06c-1.522-.071-2.57-.348-3.464-.71a7.949 7.949 0 01-3.11-3.11c-.363-.893-.64-1.942-.71-3.464-.049-1.052-.06-1.402-.06-4.062s.012-3.01.06-4.062c.071-1.522.348-2.57.71-3.464a7.949 7.949 0 013.11-3.11c.893-.363 1.942-.64 3.464.71C8.99.811 9.34.75 12 .75z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="#" class="text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Lisboa Hairstyle on Twitter">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Legal Links -->
+                <div class="mb-6 md:mb-0">
+                    <h5 class="font-serif text-brand-text-gold text-lg mb-2">Legal</h5>
+                    <ul class="space-y-1">
+                        <li><a href="/terms/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Navigate to Terms of Service page">Terms of Service</a></li>
+                        <li><a href="/privacy/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Navigate to Privacy Policy page">Privacy Policy</a></li>
+                        <li><a href="/cookies/" class="font-sans text-brand-white hover:text-brand-text-gold transition-colors" aria-label="Navigate to Cookie Policy page">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Copyright -->
+                <div class="md:text-right">
+                    <p class="font-sans text-sm text-gray-400">&copy; <span id="current-year">2024</span> Lisboa Hairstyle. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Ensure this script runs to update the year
+            if (document.getElementById('current-year')) {
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            }
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        </script>
+    </footer>
+
+    <script src="../js/cookie-consent.js" defer></script>
+</body>
+</html>
